@@ -16,6 +16,7 @@ app.get("/sum", function (req, res) {
         return res.status(400).json({
             error: "both a and b are required"
         });
+        
     }
     var num1 = Number(a);
     var num2 = Number(b);
@@ -54,4 +55,6 @@ app.get("/table", function (req, res) {
         number: number,
         table: table
     });
+    console.log("local change before pull");
+
 });
